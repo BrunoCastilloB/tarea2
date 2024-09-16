@@ -1,0 +1,237 @@
+//Ejercicio 1 Variables y tipos de datos
+
+//1
+const nombre = "Bruno";
+//2
+const edad = 24;
+//3
+const puedeConducir = true;
+//4
+console.log(nombre)
+console.log(edad)
+console.log(puedeConducir)
+//5
+console.log(typeof nombre)
+console.log(typeof edad)
+console.log(typeof puedeConducir)
+
+
+//Ejercicio 2 Operadores aritmeticos
+
+const numero1 = 20;
+const numero2 = 40;
+//1
+console.log("La suma es:",numero1 + numero2);
+//2
+console.log("La resta es:",numero1 - numero2);
+//3
+console.log("La multiplication es:", numero1 * numero2);
+//4
+console.log("La division es:",numero1 / numero2);
+//5
+console.log("El modulo es:",numero2 % numero1);
+
+
+/*
+function sumar(a, b){
+  return a + b;
+}
+console.log("La suma es:",sumar(numero1, numero2));
+
+function restar(a, b){
+  return a - b;
+}
+console.log("La resta es:",restar(numero1, numero2));
+
+function multiplicar(a, b){
+  return a * b;
+}
+console.log("La multiplicacion es:",multiplicar(numero1, numero2));
+
+function dividir(a, b){
+  return a / b;
+}
+console.log("La division es:",dividir(numero1, numero2));
+
+function modulo(a, b){
+  return b % a;
+}
+console.log("El modulo es:",modulo(numero2, numero1));
+*/
+
+//Ejercicio 3 Operadores de asignacion y comparacion
+
+const numero3 = 15;
+const numero4 = 20;
+const numero5 = '25';
+//1
+if(numero3 >= numero4) {
+  console.log(`El numero ${numero3} es mayor o igual que ${numero4}`)
+} else {console.log(`El numero ${numero3} no es mayor o igual que ${numero4}`)}
+//2
+if(numero3 <= numero4) {
+  console.log(`El numero ${numero3} es menor o igual que ${numero4}`)
+} else {console.log(`El numero ${numero3} no es menor o igual que ${numero4}`)}
+//3
+if(numero3 < numero5){
+  console.log(`El numero ${numero3} es menor que ${numero5}`)}
+else {console.log(`El numero ${numero3} no es menor que ${numero5}`)}
+//4
+if(numero5 < numero4){
+  console.log(`El numero ${numero5} es menor que ${numero4}`)
+} else {console.log(`El numero ${numero5} no es menor que ${numero4}`)}
+//5
+if (numero5 !== numero3){
+  console.log(`El numero ${numero5} es estrictamente diferente que ${numero3}`)
+}
+//6
+if (numero3 === numero4){
+  console.log(`El numero ${numero3} es estrictamente igual que ${numero4}`)
+}
+
+
+//Ejercicio 4 Condicionales
+
+const numero6 =10;
+const numero7 =20;
+const numero8 =30;
+
+let numeroMayor = Math.max(numero6, numero7, numero8);
+let numeroMenor = Math.min(numero6, numero7, numero8);
+// 1
+console.log(`El numero mayor es ${numeroMayor}`);
+// 2
+console.log(`El numero menor es ${numeroMenor}`);
+// 3
+if (numero6 % 2 == 0){
+  console.log(`El numero ${numero6} es par`)
+} else {console.log(`El numero ${numero6} es impar`)}
+//4
+if (numero7 % 2 == 0){
+  console.log(`El numero ${numero7} es par`)
+} else {console.log(`El numero ${numero7} es impar`)}
+//5
+if (numero8 % 2 == 0){
+  console.log(`El numero ${numero8} es par`)
+} else {console.log(`El numero ${numero8} es impar`)}
+//6
+if (numero6 % 5 == 0){
+  console.log(`El numero ${numero6} es multiplo de 5`)
+} else {console.log(`El numero ${numero6} no es multiplo de 5`)}
+//7
+if (numero7 % 5 == 0){
+  console.log(`El numero ${numero7} es multiplo de 5`)
+} else {console.log(`El numero ${numero7} no es multiplo de 5`)}
+//8
+if (numero8 % 5 == 0){
+  console.log(`El numero ${numero8} es multiplo de 5`)
+} else {console.log(`El numero ${numero8} no es multiplo de 5`)}
+
+//Ejercicio 5 Ciclos
+
+//1
+for (let i = 0; i<10; i++){console.log(i+1)}
+//2
+for (let i = 10; i>0; i--){console.log(i)}
+//3
+for (let i = 0; i<=10; i++){
+  if (i % 2 == 0){console.log(i)}
+}
+//4
+for (let i = 0; i<=10; i++){
+  if (i % 2 !== 0){console.log(i)}
+}
+//5
+for (let i = 0; i<=10; i++){
+  if (i % 3 == 0){console.log(i)}
+}
+//6
+for (let i = 0; i<=10; i++){
+  if (i % 5 == 0){console.log(i)}
+}
+//7
+for (let i = 0; i<=10; i++){
+  if (i % 3 == 0 && i % 5 === 0){console.log(i)}
+}
+//8
+for (let i = 0; i<=10; i++){
+  if (i % 3 == 0 || i % 5 === 0 ){console.log(i)}
+}
+
+//Ejercicio 6 Funciones
+
+//1
+function mayusculas(palabra){
+return palabra.toUpperCase()
+}
+console.log(mayusculas("Queso"))
+//2
+function minusculas(palabra){
+return palabra.toLowerCase()
+}
+console.log(minusculas("Queso"));
+//3
+function restar(a, b){
+  return a - b;
+}
+console.log("La resta es:",restar(9, 6));
+//4
+function dividir(a, b){
+  return a / b;
+}
+console.log("La division es:",dividir(5, 2));
+//5
+function multi(a, b){
+  return a * b;
+}
+console.log("La multiplicacion es:",multi(8, 4));
+//6
+function longitud(palabra){
+  return palabra.length;
+}
+console.log("La longitud es:",longitud("La longitud de la palabra es"))
+
+//Ejercicio 7 Arrays
+//1
+let numeros = [1, 2, 3, 4, 5, 6];
+let sum = 0;
+function sumararray(listanumeros){
+  for (let i = 0; i < listanumeros.length; i++){
+    sum += listanumeros[i];
+  }
+  return sum;
+}
+console.log("La suma del array es:",sumararray(numeros));
+//2
+let numeros2 = [1, 2, 3, 4, 5, 6];
+let prom = 0;
+function promedioarray(listanumeros){
+  for (let i = 0; i < listanumeros.length; i++){
+    prom += listanumeros[i];
+  }
+  return prom/listanumeros.length;
+}
+console.log("El promedio del array es:",promedioarray(numeros2));
+//3
+let arregloStrings = ['Queso', 'Pan', 'Huevo', 'Sandia'];
+function stringMayusculas(arreglopalabras){
+  var palabrasenmayuscula = [];
+  for (i = 0; i < arreglopalabras.length; i++){
+    palabrasenmayuscula[i]=(arreglopalabras[i].toUpperCase());
+  }
+  return palabrasenmayuscula;
+}
+console.log(stringMayusculas(arregloStrings));
+//4
+let numeros3 = [1, 2, 3, 4, 5, 6];
+function paresarray(listaNum){
+var nuevoArray = [];
+  for(let i = 0; i < listaNum.length; i++){
+    if (listaNum[i] % 2 == 0){
+       nuevoArray.push(listaNum[i])
+    }
+  }
+  return nuevoArray;
+}
+console.log(paresarray(numeros3));
+//Ejercicio 8 Objetos
